@@ -1,4 +1,5 @@
 # CHANGELOG
 
-The changelog is automatically updated using [semantic-release](https://github.com/semantic-release/semantic-release).
-You can see it on the [releases page](../../releases).
+## Version 0.0.1 (2018-10-24)
+
+- Fork and change so that environment variables are read from the JSON file.

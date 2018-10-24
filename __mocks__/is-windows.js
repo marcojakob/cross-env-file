@@ -1,7 +1,7 @@
 const __mock = {
   reset() {
     Object.assign(__mock, {returnValue: false})
-  },
+  }
 }
 __mock.reset()
 

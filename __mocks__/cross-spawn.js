@@ -6,12 +6,12 @@ const __mock = {
       spawn: jest.fn(() => {
         __mock.spawned = {
           on: jest.fn(),
-          kill: jest.fn(),
+          kill: jest.fn()
         }
         return __mock.spawned
-      }),
+      })
     })
-  },
+  }
 }
 
 __mock.reset()

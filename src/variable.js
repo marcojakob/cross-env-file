@@ -1,6 +1,6 @@
-import isWindows from 'is-windows'
+import isWindows from "is-windows"
 
-const pathLikeEnvVarWhitelist = new Set(['PATH', 'NODE_PATH'])
+const pathLikeEnvVarWhitelist = new Set(["PATH", "NODE_PATH"])
 
 /**
  * This will transform UNIX-style list values to Windows-style.
@@ -10,8 +10,8 @@ const pathLikeEnvVarWhitelist = new Set(['PATH', 'NODE_PATH'])
  * @param {String} varName Original name of the env variable
  * @returns {String} Converted value
  */
-function replaceListDelimiters(varValue, varName = '') {
-  const targetSeparator = isWindows() ? ';' : ':'
+function replaceListDelimiters(varValue, varName = "") {
+  const targetSeparator = isWindows() ? ";" : ":"
   if (!pathLikeEnvVarWhitelist.has(varName)) {
     return varValue
   }
@@ -50,9 +50,9 @@ function resolveEnvVars(varValue) {
       }
       return (
         escapeChars.substr(0, escapeChars.length / 2) +
-        (process.env[varName || altVarName] || '')
+        (process.env[varName || altVarName] || "")
       )
-    },
+    }
   )
 }
 

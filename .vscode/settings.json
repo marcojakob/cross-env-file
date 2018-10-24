@@ -1,0 +1,7 @@
+{
+  "prettier.semi": false,
+  "prettier.bracketSpacing": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false
+  }
+}

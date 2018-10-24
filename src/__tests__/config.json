@@ -1,0 +1,6 @@
+{
+  "base_url": "https://example.com",
+  "aws": {
+    "my_secret": "my-nested-secret"
+  }
+}
